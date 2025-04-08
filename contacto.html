@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineCartelera - Contáctanos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><a href="index.html">CineCartelera</a></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <div class="carousel-images">
+            <a href="bridget-jones.html"><img src="imagen01.png" alt="Bridget Jones"></a>
+            <a href="capitan-america.html"><img src="imagen02.png" alt="Capitan America"></a>
+            <a href="the-brutalist.html"><img src="imagen03.png" alt="The Brutalist"></a>
+            <a href="maria-callas.html"><img src="imagen04.png" alt="Maria Callas"></a>
+            <a href="polican.html"><img src="imagen05.png" alt="Polican"></a>
+            <a href="bridget-jones.html"><img src="imagen01.png" alt="Bridget Jones"></a>
+            <a href="capitan-america.html"><img src="imagen02.png" alt="Capitan America"></a>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <h2>Contáctanos</h2>
+        <p>¿Tienes alguna pregunta o sugerencia? Rellena el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+        <div class="contact-container">
+            <form id="contactForm">
+                
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" required placeholder="Ingresa tu nombre completo">
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+                <label for="tema">Selecciona un tema</label>
+                <select id="tema" name="tema" required>
+                    <option value="">-- Selecciona un tema --</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="reclamo">Reclamo</option>
+                </select>
+
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje aquí"></textarea>
+
+                <p>Selecciona tus preferencias:</p>
+                <label><input type="checkbox" name="preferencias" value="promociones"> Recibir promociones</label>
+                <label><input type="checkbox" name="preferencias" value="noticias"> Recibir noticias</label>
+                <label><input type="checkbox" name="preferencias" value="eventos"> Recibir información de eventos</label><br><br><hr><br>
+
+                <p>¿Cómo prefieres ser contactado?</p>
+                <label><input type="radio" name="contacto" value="email" required> Email</label>
+                <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+                <label><input type="radio" name="contacto" value="whatsapp"> WhatsApp</label><br><br><br>
+
+                <div class="button-group">
+                    <button type="submit">Enviar Mensaje</button>
+                    <button type="reset">Borrar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <h2>Nuevos Estrenos</h2>
+
+    <section class="movie-list">
+        <div class="movie-item">
+            <a href="capitan-america.html"><img src="pelicula1.jpg" alt="Capitan America"></a>
+            <div class="movie-info">
+                <h3>Capitán América</h3>
+                <p>Duración: 120 mins</p>
+                <p>Género: Acción</p>
+                <a href="capitan-america.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+        <div class="movie-item">
+            <a href="bridget-jones.html"><img src="pelicula2.jpg" alt="Bridget Jones"></a>
+            <div class="movie-info">
+                <h3>Bridget Jones</h3>
+                <p>Duración: 120 mins</p>
+                <p>Género: Comedia</p>
+                <a href="bridget-jones.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+        <div class="movie-item">
+            <a href="polican.html"><img src="pelicula3.jpg" alt="Polican"></a>
+            <div class="movie-info">
+                <h3>Policán</h3>
+                <p>Duración: 90 mins</p>
+                <p>Género: Animación</p>
+                <a href="polican.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+        <div class="movie-item">
+            <a href="the-brutalist.html"><img src="pelicula4.jpg" alt="The Brutalist"></a>
+            <div class="movie-info">
+                <h3>The Brutalist</h3>
+                <p>Duración: 215 mins</p>
+                <p>Género: Drama</p>
+                <a href="the-brutalist.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+    </section>
+
+    <h2>Las Favoritas</h2>
+    
+    <section class="movie-list">
+        <div class="movie-item">
+            <a href="vermiglio.html"><img src="pelicula5.jpg" alt="Vermiglio"></a>
+            <div class="movie-info">
+                <h3>Vermiglio</h3>
+                <p>Duración: 119 mins</p>
+                <p>Género: Drama</p>
+                <a href="vermiglio.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+        <div class="movie-item">
+            <a href="la-tutoria.html"><img src="pelicula6.jpg" alt="La Tutoria"></a>
+            <div class="movie-info">
+                <h3>La Tutoría</h3>
+                <p>Duración: 117 mins</p>
+                <p>Género: Drama</p>
+                <a href="la-tutoria.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+        <div class="movie-item">
+            <a href="attack-on-titan.html"><img src="pelicula7.jpg" alt="Attack on Titan"></a>
+            <div class="movie-info">
+                <h3>Attack on Titan</h3>
+                <p>Duración: 145 mins</p>
+                <p>Animación</p>
+                <a href="attack-on-titan.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+        <div class="movie-item">
+            <a href="maria-callas.html"><img src="pelicula8.jpg" alt="Maria Callas"></a>
+            <div class="movie-info">
+                <h3>María Callas</h3>
+                <p>Duración: 122 mins</p>
+                <p>Género: Drama</p>
+                <a href="maria-callas.html"><button>Ver detalles</button></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">Todos los derechos reservados 2025</p>
+            <ul class="footer-menu">
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
