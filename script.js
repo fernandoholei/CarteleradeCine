@@ -44,3 +44,7 @@ function aceptarCookies() {
     document.getElementById("cookiesId").style.display = "none";
     localStorage.setItem("cookiesAceptadas", "true");
 }
+function rechazarCookies() {
+    document.getElementById("cookiesId").style.display = "none";
+    localStorage.setItem("cookiesAceptadas", "false");
+}
