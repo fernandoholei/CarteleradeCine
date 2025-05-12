@@ -5,6 +5,19 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
+window.addEventListener('scroll', () => {
+    const header = document.querySelector('header');
+    header.classList.toggle('header-scroll', window.scrollY > 50);
+});
+
+document.querySelector('.logo-link').addEventListener('mouseover', () => {
+    gsap.to('.logo-link', {duration: 0.3, scale: 1.05, ease: "power2.out"});
+});
+
+document.querySelector('.logo-link').addEventListener('mouseout', () => {
+    gsap.to('.logo-link', {duration: 0.3, scale: 1, ease: "power2.out"});
+});
+
 document.getElementById("contactForm").addEventListener("submit", function(event) {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -48,3 +61,4 @@ function rechazarCookies() {
     document.getElementById("cookiesId").style.display = "none";
     localStorage.setItem("cookiesAceptadas", "false");
 }
+
