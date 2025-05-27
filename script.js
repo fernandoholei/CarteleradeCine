@@ -49,21 +49,24 @@ document.getElementById("contactForm").addEventListener("submit", function(event
 });
 
 window.onload = function () {
-    if (localStorage.getItem("cookiesAceptadas") !== null) {
+    const estadoCookies = localStorage.getItem("cookiesAceptadas");
+
+    if (estadoCookies === "true") {
         document.getElementById("cookiesId").style.display = "none";
-    } else {
-        document.getElementById("cookiesId").style.display = "block";
+    }else {
+        document.getElementById("cookiesId").style.display = "none";
     }
 };
 
+window.onload = function () {
+    if (localStorage.getItem("cookiesAceptadas") === "true") {
+        document.getElementById("cookiesId").style.display = "none";
+}};
+
 function aceptarCookies() {
-    localStorage.setItem("cookiesAceptadas", "true");
     document.getElementById("cookiesId").style.display = "none";
+    localStorage.setItem("cookiesAceptadas", "true");
 }
 
-function rechazarCookies() {
-    localStorage.setItem("cookiesAceptadas", "false");
-    document.getElementById("cookiesId").style.display = "none";
-}
 
 
