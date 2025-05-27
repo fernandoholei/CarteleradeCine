@@ -42,7 +42,12 @@ nav .nav-links li {
     width: 100px;
     text-align: center;
 }
-
+li a{
+    text-decoration: none;
+}
+div a{
+    text-decoration: none;
+}
 nav .nav-links a {
     display: block;
     color: #fff;
