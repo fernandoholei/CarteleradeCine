@@ -2,6 +2,22 @@
     margin: 0;
 }
 
+.ubicacion {
+    padding: 2em;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.ubicacion h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.ubicacion p {
+    margin-bottom: 1em;
+    color: #555;
+}
+
 body {
     font-family: Arial;
     background-color: #f4f4f4;
@@ -740,4 +756,8 @@ h2 {
     .movie-info {
         width: 100%;
     }
+
+
+
+    
 }
